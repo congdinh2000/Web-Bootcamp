@@ -30,7 +30,7 @@ p{
 }
 
 .container-fluild{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 /* navigation bar */
@@ -63,11 +63,16 @@ p{
 .title-image{
   width: 60%;
   transform: rotate(25deg);
+  /* z-index: -1; */
+  position: absolute;
 }
 
 /* feature */
 #features{
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box{
@@ -110,4 +115,51 @@ p{
 .press-logo{
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+#pricing{
+  text-align: center;
+  padding: 100px;
+}
+
+.pricing-column{
+  padding: 3% 2%;
+}
+
+/* cta section */
+#cta{
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ff4c68;
+}
+
+#cta h3{
+  font-family: "Montserrat";
+  color: #fff;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* footer section */
+#footer { 
+  text-align: center;
+  background-color: #fff;
+  padding: 7% 15%;
+}
+
+.footer-icon{
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px){
+
+  #title{
+    text-align: center;
+  }
+
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
 }
