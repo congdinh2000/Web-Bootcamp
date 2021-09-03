@@ -1,0 +1,13 @@
+<%- include('partials/header') -%> 
+<h1><%= firstTitle %></h1> </h1>
+    <p><%= firstBody %> </p>
+
+<% postList.forEach(post => { %>
+    <h1><%= post.title %> </h1>
+    <% var postUrl = post.title.toLowerCase().split(' ').join('-') %> 
+    <p><%= post.post.substring(0, 100) + "..." %> 
+        <a href="/posts/<%= postUrl %>">Read More</a>
+    </p>
+<% }) %>
+
+<%- include('partials/footer') -%> 
